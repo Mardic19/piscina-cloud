@@ -1,0 +1,43 @@
+p,
+        b {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+        }
+
+        /* Estilo para el título */
+        .welcome-title {
+            font-family: 'Helvetica Neue', sans-serif;
+            /* Fuente sans-serif */
+            font-size: 36px;
+            /* Tamaño de fuente ajustado */
+            text-align: center;
+            /* Texto centrado */
+            font-weight: bold;
+            /* Fuente en negrita */
+        }
+
+        /* Estilo para el contenedor de la imagen */
+        .image-container {
+            text-align: center;
+            /* Contenido centrado horizontalmente */
+            overflow: hidden;
+            /* Ocultar cualquier desbordamiento de la imagen */
+        }
+
+        /* Estilo para la imagen */
+        .welcome-image {
+            display: block;
+            /* Asegura que la imagen sea un bloque */
+            margin: 0 auto;
+            /* Centrar horizontalmente la imagen */
+            max-width: 60%;
+            /* Reducir el tamaño de la imagen */
+            border-radius: 10px;
+            /* Agregar bordes redondeados */
+        }
+
+        /*.gradiente-fondo {
+            background: linear-gradient(to bottom, #0047ab, #1e488f); /* Degradado de azul cobalto (#0047ab) a azul de Prusia (#1e488f) */
+        /*    color: white; 
+            padding: 20px; 
+        }*/

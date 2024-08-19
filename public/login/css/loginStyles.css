@@ -1,0 +1,52 @@
+
+    /* Estilo para el contenedor con efecto blur */
+    .container-blur {
+    width: 600px; /* Ancho fijo para la tarjeta */
+    background-color: rgba(61, 89, 171, 0.5); /* Cambia el color de fondo a cobalto transparente */
+    padding: 0px; /* Espaciado interior reducido */
+    border-radius: 10px; /* Borde redondeado */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    margin: 0 auto; /* Centrar horizontalmente */
+  }
+
+    /* Estilo para el nombre de la empresa */
+    .company-name {
+      font-family: 'Helvetica Neue', sans-serif; /* Cambiar a una fuente sans-serif */
+      text-transform: uppercase; /* Convertir a mayúsculas */
+      font-weight: bold; /* Fuente en negrita */
+    }
+
+    /* Estilo para el formulario */
+    .signin-form .form-group {
+      margin-bottom: 10px; /* Espaciado inferior reducido entre controles */
+    }
+
+    /* Estilo para el botón de Ingresar */
+    
+	/* Estilo para el botón de Ingresar */
+  .submit {
+    padding: 10px 20px; /* Espaciado interior del botón reducido */
+    background-color: rgba(61, 89, 171, 0.8); /* Cambia el color del botón a cobalto transparente */
+    border-color: rgba(61, 89, 171, 0.8); /* Cambia el color del borde a cobalto transparente */
+    color: #fff; /* Cambia el color del texto a blanco */
+  }
+
+
+    /* Estilo para el enlace "Forgot Password" */
+    .form-group.d-md-flex .text-md-right a {
+      margin-top: 10px; /* Espaciado superior reducido */
+    }
+
+    /* Estilo para el fondo de pantalla */
+    body {
+      background-image: url(/login/images/back.jpg);
+      background-size: cover; /* Ajustar la imagen para cubrir toda la pantalla */
+      background-attachment: fixed; /* Fijar el fondo para que no se desplace */
+      margin: 0; /* Eliminar márgenes en el cuerpo del documento */
+      overflow: hidden; /* Evitar que aparezca la barra de desplazamiento vertical */
+      display: flex;
+      justify-content: center; /* Centrar horizontalmente */
+      align-items: center; /* Centrar verticalmente */
+      height: 100vh; /* Establecer el alto de la pantalla completa */
+    }
