@@ -20,13 +20,13 @@ class ProfesorController extends Controller
 
     public function create()
     {
-        return view('Profesor.create');
+        return view('profesor.create');
     }
 
     public function edit($id)
     {
         $Profesor = Profesor::with('persona')->findOrFail($id);
-        return view('Profesor.edit', compact('Profesor'));
+        return view('profesor.edit', compact('Profesor'));
     }
 
 
