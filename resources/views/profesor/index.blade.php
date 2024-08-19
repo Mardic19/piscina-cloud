@@ -15,7 +15,7 @@
             <h1>VISTA DOCENTES</h1>
         </center>
         <br>
-        <a href="{{ route('Profesor.create') }}" class="btn btn-primary"><i class="fas fa-plus"></i>Nuevo Registro</a>
+        <a href="{{ route('profesor.create') }}" class="btn btn-primary"><i class="fas fa-plus"></i>Nuevo Registro</a>
         <nav class="navbar float-right">
             <form class="form-inline my-2" method="GET">
                 <input name="buscarpor" class="form-control my-2" type="search" placeholder="Buscar por codigo"
@@ -65,9 +65,9 @@
                             <td>{{ $itemProfesor->persona->Edad }}</td>
                             <td>{{ $itemProfesor->persona->email }}</td>
                             <td>{{ $itemProfesor->especialidad }}</td>
-                            <td><a href="{{ route('Profesor.edit', $itemProfesor->idProfesor) }}"
+                            <td><a href="{{ route('profesor.edit', $itemProfesor->idProfesor) }}"
                                     class="btn btn-success btn-sm"><i class="fas fa-edit"></i>Editar</a>
-                                    <form action="{{ route('Profesor.destroy', $itemProfesor->idProfesor) }}" method="POST"
+                                    <form action="{{ route('profesor.destroy', $itemProfesor->idProfesor) }}" method="POST"
                                     style="display: inline">
                                     @csrf
                                     @method('DELETE')

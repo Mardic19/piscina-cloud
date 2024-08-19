@@ -11,7 +11,7 @@
         </div>
         <div class="col-md-6">
             <h1 class="text-center">Editar datos del Profesor</h1>
-            <form class="mt-4" method="POST" action="{{ route('Profesor.update', $Profesor->idProfesor) }}">
+            <form class="mt-4" method="POST" action="{{ route('profesor.update', $Profesor->idProfesor) }}">
                 @method('put')
                 @csrf
                 <div class="form-group">

@@ -9,7 +9,7 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">Datos Generales</h4>
-                    <form class="mt-4" method="POST" action="{{ route('Profesor.store') }}">
+                    <form class="mt-4" method="POST" action="{{ route('profesor.store') }}">
                         @csrf
                         <div class="form-group">
                             <label for="exampleInputEmail1" class="form-label">DNI</label>
