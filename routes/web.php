@@ -36,7 +36,7 @@ Route::get('cancelarHorario', function () {
 
 route::resource('Profesor',ProfesorController::class);
 Route::get('cancelarProfesor', function () {
-    return redirect()->route('Profesor.index')->with('datos','Acción Cancelada...!');
+    return redirect()->route('profesor.index')->with('datos','Acción Cancelada...!');
 })->name('cancelarProfesor');
 
 /* MATRICULA */

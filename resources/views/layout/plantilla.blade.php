@@ -119,7 +119,7 @@
                                 </span></a>
                         </li>
 
-                        <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('Profesor.index') }}" aria-expanded="false"><i class="far fa-user"></i><span class="hide-menu">Docente
+                        <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('profesor.index') }}" aria-expanded="false"><i class="far fa-user"></i><span class="hide-menu">Docente
                                 </span></a>
                         </li>
 

@@ -15,7 +15,7 @@ class ProfesorController extends Controller
         $persona=Persona::all();
         $Profesor = Profesor::where('idProfesor', 'like', '%' . $buscarpor . '%')->paginate($this::PAGINATION);
         //$Profesor = Profesor::with('persona')->get();
-        return view('Profesor.index', compact('Profesor', 'buscarpor','persona'));
+        return view('profesor.index', compact('Profesor', 'buscarpor','persona'));
     }
 
     public function create()
@@ -87,7 +87,7 @@ class ProfesorController extends Controller
         $Profesor->DNI = $request->dni;
         $Profesor->especialidad = $request->especialidad;
         $Profesor->save();
-        return redirect()->route('Profesor.index')->with('datos', 'Registro Nuevo guardado...!');
+        return redirect()->route('profesor.index')->with('datos', 'Registro Nuevo guardado...!');
     }
 
 
@@ -95,7 +95,7 @@ class ProfesorController extends Controller
     {
         $Profesor = Profesor::findOrFail($id);
         $Profesor->delete();
-        return redirect()->route('Profesor.index')->with('datos', 'Registro Eliminado...!');
+        return redirect()->route('profesor.index')->with('datos', 'Registro Eliminado...!');
     }
 
     public function update(Request $request, $id)
@@ -154,6 +154,6 @@ class ProfesorController extends Controller
         $Profesor->save();
 
 
-        return redirect()->route('Profesor.index')->with('datos', 'Registro Actualizado...!');
+        return redirect()->route('profesor.index')->with('datos', 'Registro Actualizado...!');
     }
 }
