@@ -26,10 +26,10 @@
 
                     <div class="form-group">
                         <label for=""> Apellidos y Nombres :</label>
-                        <input type="text" class="form-control @error('nombres') is-invalid @enderror"
-                            value="{{ $alumno->persona->Nombres }}" id="nombres" name="nombres">
+                        <input type="text" class="form-control @error('Nombres') is-invalid @enderror"
+                            value="{{ $alumno->persona->Nombres }}" id="Nombres" name="Nombres">
 
-                        @error('nombres')
+                        @error('Nombres')
                             <span class="invelid-feeback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
@@ -102,7 +102,7 @@
                             </ul>
                         </div>
                     @endif
-                    
+
                     <button type="submit" class="btn btn-primary">Actualizar</button>
                     <a href="{{ route('cancelarAlumno') }}" class="btn btn-danger"><i class="fas fa-ban"></i>Cancelar</a>
                 </div>
