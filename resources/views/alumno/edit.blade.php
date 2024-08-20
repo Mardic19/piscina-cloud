@@ -93,6 +93,16 @@
                             value="{{ $alumno->condicionMedica}}">
                     </div>
 
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    
                     <button type="submit" class="btn btn-primary">Actualizar</button>
                     <a href="{{ route('cancelarAlumno') }}" class="btn btn-danger"><i class="fas fa-ban"></i>Cancelar</a>
                 </div>
