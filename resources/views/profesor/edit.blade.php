@@ -92,6 +92,17 @@
                     @enderror
                 </div>
 
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
                 <button class="btn btn-primary"><i class="fas fa-save"></i>Actualizar</button>
                 <a href="{{ route('cancelarProfesor') }}" class="btn btn-danger"><i class="fas fa-ban"></i>Cancelar</a>
             </form>

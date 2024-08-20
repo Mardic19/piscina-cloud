@@ -67,7 +67,7 @@
                 <td>{{ $itemAlumno->persona->Nombres }}</td>
                 <td>{{ $itemAlumno->persona->Celular }}</td>
                 <td>{{ $itemAlumno->persona->Edad }}</td>
-                <td>{{ $itemAlumno->persona->email }}</td>
+                <td>{{ $itemAlumno->persona->Correo }}</td>
                 <td>{{ $itemAlumno->Nivel }}</td>
                 <td>{{ $itemAlumno->condicionMedica }}</td>
                 <td>

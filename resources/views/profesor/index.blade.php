@@ -63,7 +63,7 @@
                             <td>{{ $itemProfesor->persona->Nombres }}</td>
                             <td>{{ $itemProfesor->persona->Celular }}</td>
                             <td>{{ $itemProfesor->persona->Edad }}</td>
-                            <td>{{ $itemProfesor->persona->email }}</td>
+                            <td>{{ $itemProfesor->persona->Correo }}</td>
                             <td>{{ $itemProfesor->especialidad }}</td>
                             <td><a href="{{ route('profesor.edit', $itemProfesor->idProfesor) }}"
                                     class="btn btn-success btn-sm"><i class="fas fa-edit"></i>Editar</a>
