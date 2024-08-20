@@ -110,7 +110,7 @@ class AlumnoController extends Controller
             'Nombres' => 'required',
             'celular' => 'required|numeric|digits:9',
             'edad' => 'required|numeric',
-            'Correo' => 'required|Correo',
+            'Correo' => 'required|email',
 
         ], [
             'dni.required' => 'Ingrese el DNI',
@@ -131,7 +131,7 @@ class AlumnoController extends Controller
             'edad.numeric' => 'Este campo solo admite nùmeros',
 
             'Correo.required' => 'Ingrese el Correo',
-            'Correo.Correo' => 'Debe ingresar su Correo valido',
+            'Correo.email' => 'Debe ingresar su Correo valido',
 
         ]);
 
