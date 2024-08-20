@@ -82,10 +82,10 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="email" class="form-label">CORREO</label>
-                    <input type="text" class="form-control @error('email') is-invalid @enderror" name="email"
-                        value="{{ $Profesor->persona->email}}">
-                    @error('email')
+                    <label for="Correo" class="form-label">CORREO</label>
+                    <input type="text" class="form-control @error('Correo') is-invalid @enderror" name="Correo"
+                        value="{{ $Profesor->persona->Correo}}">
+                    @error('Correo')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
