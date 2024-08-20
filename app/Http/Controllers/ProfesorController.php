@@ -108,7 +108,7 @@ class ProfesorController extends Controller
                 'CELULAR' => 'numeric|digits:9',
                 'EDAD' => 'numeric',
                 'idProfesor' => 'required',
-                'CORREO' => 'required|email'
+                'Correo' => 'required|email'
             ],
             [
 
@@ -128,8 +128,8 @@ class ProfesorController extends Controller
                 'EDAD.required' => 'Ingrese EDAD',
                 'EDAD.numeric' => 'Solo números',
 
-                'CORREO.required' => 'Ingrese CORREO',
-                'CORREO.email' => 'Dirección de CORREO invalida',
+                'Correo.required' => 'Ingrese Correo',
+                'Correo.email' => 'Dirección de Correo invalida',
 
                 'especialidad.required' => 'Ingrese especialidad y apellidos del profesor',
                 'especialidad.regex' => 'Solo letras'
