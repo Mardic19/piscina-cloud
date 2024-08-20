@@ -17,7 +17,7 @@ class Persona extends Model
         'Nombres',
         'Edad',
         'Celular',
-        'email',
+        'Correo',
     ];
 
 

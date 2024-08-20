@@ -72,9 +72,9 @@
 
                     <div class="form-group">
                         <label for=""> CORREO:</label>
-                        <input type="email" class="form-control @error('email') is-invalid @enderror" id="email"
-                            name="email" value="{{ $alumno->persona->email }}">
-                        @error('email')
+                        <input type="email" class="form-control @error('Correo') is-invalid @enderror" id="Correo"
+                            name="Correo" value="{{ $alumno->persona->Correo }}">
+                        @error('Correo')
                             <span class="invelid-feeback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>

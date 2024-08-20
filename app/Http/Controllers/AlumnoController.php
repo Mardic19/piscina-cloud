@@ -110,7 +110,7 @@ class AlumnoController extends Controller
             'Nombres' => 'required',
             'celular' => 'required|numeric|digits:9',
             'edad' => 'required|numeric',
-            'email' => 'required|email',
+            'Correo' => 'required|Correo',
 
         ], [
             'dni.required' => 'Ingrese el DNI',
@@ -130,8 +130,8 @@ class AlumnoController extends Controller
             'edad.required' => 'Ingrese el EDAD',
             'edad.numeric' => 'Este campo solo admite nùmeros',
 
-            'email.required' => 'Ingrese el email',
-            'email.email' => 'Debe ingresar su email valido',
+            'Correo.required' => 'Ingrese el Correo',
+            'Correo.Correo' => 'Debe ingresar su Correo valido',
 
         ]);
 
@@ -141,7 +141,7 @@ class AlumnoController extends Controller
         $persona->Nombres = $request->Nombres;
         $persona->celular = $request->celular;
         $persona->edad = $request->edad;
-        $persona->email = $request->email;
+        $persona->Correo = $request->Correo;
         $persona->save();
 
         $alumno=Alumno::findOrFail($id);  
